@@ -1,2 +1,2 @@
 # BestBy
-online online store
+Online store
