@@ -76,3 +76,27 @@ function checkAuthAdmin()
 	}
 	return true;
 }
+
+/**
+ * Проверка на суперадмина
+ */
+function isSuperAdmin()
+{
+    if ((int)$_SESSION['admin']['type'] === 1) {
+        return true;
+    }
+    return false;
+}
+
+function dumpAdmin($var)
+{
+    if (isSuperAdmin()) {
+        Dumphper::dump($var);
+    }
+    return false;
+}
+
+function dd($var)
+{
+    die(Dumphper::dump($var));
+}
