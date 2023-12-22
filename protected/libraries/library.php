@@ -159,7 +159,7 @@ function parseDateFromReview($date)
         '12' => 'декабря'
     );
     $tmp_arr = explode('-', $result);
-    $tmp_arr['1'] = strtr($tmp_arr['1'], $converter);
+    $tmp_arr['1'] = strtr($tmp_arr['0'], $converter);
     $result = $tmp_arr['2'] . '-' . $tmp_arr['1'] . '-' . $tmp_arr['0'];
     $time_rev = substr($date, $str_pos, strlen($date));
     $time_rev = explode(':', $time_rev);
