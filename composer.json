@@ -1,0 +1,12 @@
+{
+    "name": "melvin/best-by",
+    "authors": [
+        {
+            "name": "melvin-rulit",
+            "email": "marchenko1985g@outlook.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.23"
+    }
+}
